@@ -19,6 +19,46 @@ const meetings = [
             'https://clemsontigers.com/wp-content/uploads/2022/07/CLEMSON_BEADLE_JOSH-768x1024.jpg',
         location: 'Ocala Park',
     },
+    {
+        id: 1,
+        date: 'January 11th, 2022',
+        time: '5:00 PM',
+        datetime: '2022-01-10T17:00',
+        name: 'Alexander Bennet',
+        imageUrl:
+            'https://clemsontigers.com/wp-content/uploads/2022/07/CLEMSON_BEADLE_JOSH-768x1024.jpg',
+        location: 'Ocala Park',
+    },
+    {
+        id: 1,
+        date: 'January 12th, 2022',
+        time: '5:00 PM',
+        datetime: '2022-01-10T17:00',
+        name: 'Alexander Bennet',
+        imageUrl:
+            'https://clemsontigers.com/wp-content/uploads/2022/07/CLEMSON_BEADLE_JOSH-768x1024.jpg',
+        location: 'Ocala Park',
+    },
+    {
+        id: 1,
+        date: 'January 14th, 2022',
+        time: '5:00 PM',
+        datetime: '2022-01-10T17:00',
+        name: 'Shaquille O Neal',
+        imageUrl:
+            'https://cdn.nba.com/headshots/nba/latest/1040x760/406.png',
+        location: 'Ocala Park',
+    },
+    {
+        id: 1,
+        date: 'January 15th, 2022',
+        time: '5:00 PM',
+        datetime: '2022-01-10T17:00',
+        name: 'Micheal Jordan',
+        imageUrl:
+            'https://clemsontigers.com/wp-content/uploads/2022/07/CLEMSON_BEADLE_JOSH-768x1024.jpg',
+        location: 'Ocala Park',
+    },
     // More meetings...
 ]
 const days = [
