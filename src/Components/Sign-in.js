@@ -1,6 +1,41 @@
-import React from 'react';
+import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { post } from '../authService/authService';
+import { AuthContext } from '../context/auth.context';
 
 const SignIn = () => {
+
+  const { authenticateUser } = useContext(AuthContext)
+
+  const  [ state, setState ] = useState({
+    email: '', 
+    password: ''
+    
+ })
+ const updateState = (event) => {
+    setState({
+        ...state, [event.target.name] : event.target.value
+    }
+    )
+ }
+  const navigate = useNavigate()
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    post("/auth/login", state) 
+    .then(res =>{
+        localStorage.setItem("authToken", res.data.token);
+        localStorage.setItem("id", res.data.id);
+        navigate("/");
+
+    } )
+    .catch(err =>{
+        console.log(err)
+    }
+        )
+    .finally(() =>{
+        authenticateUser()
+    })
+  }
   return (
     <div className="App">
       <>
@@ -30,7 +65,7 @@ const SignIn = () => {
 
           <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
             <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-              <form className="space-y-6" action="#" method="POST">
+              <form  onSubmit={handleSubmit}className="space-y-6" action="#" method="POST">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Email address
@@ -41,6 +76,7 @@ const SignIn = () => {
                       name="email"
                       type="email"
                       autoComplete="email"
+                      onChange={updateState}
                       required
                       className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                     />
@@ -57,6 +93,7 @@ const SignIn = () => {
                       name="password"
                       type="password"
                       autoComplete="current-password"
+                      onChange={updateState}
                       required
                       className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                     />

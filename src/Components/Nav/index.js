@@ -1,15 +1,27 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from "react-router-dom";
+import { useContext } from "react";                     // <== IMPORT 
+import { AuthContext } from "../../context/auth.context";  // <== IMPORT
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
+ 
+
+
 }
 
 const Nav = () => {
+  const { user } = useContext(AuthContext);
   return (
     <Disclosure as="nav" className="bg-orange-600">
+     
+     
       {({ open }) => (
+       
+     
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
