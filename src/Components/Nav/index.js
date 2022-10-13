@@ -15,11 +15,14 @@ const Nav = () => {
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://cdn-icons-png.flaticon.com/512/2527/2527948.png"
-                    alt="Your Company"
-                  />
+                  <a href='#home'>
+                    <img
+                      className="block h-8 w-auto lg:hidden"
+                      src="https://cdn-icons-png.flaticon.com/512/2527/2527948.png"
+                      alt="Your Company"
+                    />
+                  </a>
+
                   <img
                     className="hidden h-8 w-auto lg:block"
                     src="https://cdn-icons-png.flaticon.com/512/2527/2527948.png"
@@ -101,7 +104,7 @@ const Nav = () => {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href="settings"
                               className={classNames(
                                 active ? 'bg-gray-100' : '',
                                 'block px-4 py-2 text-sm text-gray-700'
