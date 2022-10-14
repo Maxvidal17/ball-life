@@ -7,14 +7,14 @@ import { BrowserRouter } from 'react-router-dom';
 import { AuthProviderWrapper } from "./context/auth.context"; // <== IMPORT
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <BrowserRouter>
     <AuthProviderWrapper>      {/*  <== ADD  */}
         <App />
       </AuthProviderWrapper>     {/*  <== ADD  */}
   
     </BrowserRouter>
-  </React.StrictMode>
+  // {/* </React.StrictMode> */}
 );
 
 // If you want to start measuring performance in your app, pass a function

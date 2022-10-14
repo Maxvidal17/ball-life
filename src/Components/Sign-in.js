@@ -20,9 +20,11 @@ const SignIn = () => {
  }
   // const navigate = useNavigate()
   const handleSubmit = (e) => {
+
     e.preventDefault();
     post("/auth/login", state) 
     .then(res =>{
+      console.log("TRYING")
         localStorage.setItem("authToken", res.data.token);
         localStorage.setItem("id", res.data.id);
         // navigate("/");
