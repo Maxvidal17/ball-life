@@ -1,6 +1,7 @@
 // src/context/auth.context.js
 
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { get } from "../authService/authService";
 
 const API_URL = "http://localhost:5005";
@@ -11,8 +12,11 @@ function AuthProviderWrapper(props) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
   const authenticateUser = () => {
     const token = localStorage.getItem("authToken");
+
     
     setIsLoading(true);
  
@@ -30,6 +34,8 @@ function AuthProviderWrapper(props) {
             })
             .finally(() => {
                 setIsLoading(false)
+                setIsLoggedIn(true)
+                navigate('/')
             });
         } else {
             setIsLoading(false);

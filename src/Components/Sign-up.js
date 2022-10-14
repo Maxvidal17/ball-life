@@ -6,7 +6,7 @@ import { AuthContext } from '../context/auth.context';
 
 const SignUp = () => {
     const { authenticateUser } = useContext(AuthContext)
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
      const  [ state, setState ] = useState({
         email: '', 
         password: ''
@@ -24,7 +24,7 @@ const SignUp = () => {
         .then(res =>{
             localStorage.setItem("authToken", res.data.token);
             localStorage.setItem("id", res.data.id);
-            navigate("/");
+            // navigate("/");
 
         } )
         .catch(err =>{

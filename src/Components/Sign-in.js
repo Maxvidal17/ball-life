@@ -18,14 +18,14 @@ const SignIn = () => {
     }
     )
  }
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
     post("/auth/login", state) 
     .then(res =>{
         localStorage.setItem("authToken", res.data.token);
         localStorage.setItem("id", res.data.id);
-        navigate("/");
+        // navigate("/");
 
     } )
     .catch(err =>{
