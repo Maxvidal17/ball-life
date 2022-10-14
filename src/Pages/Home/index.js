@@ -10,7 +10,7 @@ const courts = [
         reviewCount: 38,
         imageSrc: 'https://i0.wp.com/miamikidz.com/wp-content/uploads/2009/09/Continental-Park_sign.jpg',
         imageAlt: 'TODO',
-        href: '#',
+        href: 'https://www.zoomiami.org/',
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const courts = [
         reviewCount: 18,
         imageSrc: 'https://www.miamigrillcatering.com/miami-dade-parks/images/tropical-park.png',
         imageAlt: 'TODO',
-        href: '#',
+        href: 'https://www.miamidade.gov/parks/tropical.asp',
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const courts = [
         reviewCount: 14,
         imageSrc: 'https://media.glassdoor.com/l/106252/miami-dade-county-office.jpg',
         imageAlt: 'TODO',
-        href: '#',
+        href: 'https://campowaissabauer.com/',
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const courts = [
         reviewCount: 21,
         imageSrc: 'https://i1.wp.com/miamikidz.com/wp-content/uploads/2009/06/OlympicPark_sign.jpg',
         imageAlt: 'TODO',
-        href: '#',
+        href: 'https://www.floridastateparks.org/OletaRiver',
     },
     // More courts...
 ]
