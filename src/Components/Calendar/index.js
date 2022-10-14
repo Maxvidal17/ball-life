@@ -17,7 +17,7 @@ const meetings = [
         datetime: '2022-01-10T17:00',
         name: 'Alexander Bennet',
         imageUrl:
-            'https://clemsontigers.com/wp-content/uploads/2022/07/CLEMSON_BEADLE_JOSH-768x1024.jpg',
+        'https://images.sidearmdev.com/resize?url=https://s3.amazonaws.com/sidearm.sites/nicholls.sidearmsports.com/images/2019/11/1/0912_kacie_fountain_2019.jpg&width=300&height=&type=jpeg&gravity=&quality=',
         location: 'Ocala Park',
     },
     {
@@ -25,9 +25,9 @@ const meetings = [
         date: 'January 11th, 2022',
         time: '5:00 PM',
         datetime: '2022-01-10T17:00',
-        name: 'Alexander Bennet',
+        name: 'Jane Guard',
         imageUrl:
-            'https://clemsontigers.com/wp-content/uploads/2022/07/CLEMSON_BEADLE_JOSH-768x1024.jpg',
+            'https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/Weee8EDEy3quoDiaE7UcZWEJSgs=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/EPJXK72OJHVGAV2KAXEJF5HC7Y.jpg',
         location: 'Ocala Park',
     },
     {
@@ -35,7 +35,7 @@ const meetings = [
         date: 'January 12th, 2022',
         time: '5:00 PM',
         datetime: '2022-01-10T17:00',
-        name: 'Alexander Bennet',
+        name: 'Ben Kenobi',
         imageUrl:
             'https://clemsontigers.com/wp-content/uploads/2022/07/CLEMSON_BEADLE_JOSH-768x1024.jpg',
         location: 'Ocala Park',
@@ -57,7 +57,7 @@ const meetings = [
         datetime: '2022-01-10T17:00',
         name: 'Micheal Jordan',
         imageUrl:
-            'https://clemsontigers.com/wp-content/uploads/2022/07/CLEMSON_BEADLE_JOSH-768x1024.jpg',
+        'https://banner2.cleanpng.com/20180616/cpx/kisspng-michael-jordan-basketball-player-nba-february-17-dennis-rodman-5b24951e5b5683.8798576715291241263741.jpg',
         location: 'Ocala Park',
     },
     // More meetings...

@@ -66,7 +66,7 @@ const Home = () => {
                             </div>
                             <div className="pt-10 pb-4 text-center">
                                 <h3 className="text-sm font-medium text-gray-900">
-                                    <a href={court.href}>
+                                    <a href={court.href} target="_blank">
                                         <span aria-hidden="true" className="absolute inset-0" />
                                         {court.name}
                                     </a>

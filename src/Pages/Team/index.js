@@ -2,7 +2,7 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/20/solid'
 
 const people = [
     {
-        name: 'Jane Cooper',
+        name: 'Elizabath Cooper',
         title: 'Power Forward',
         role: 'Available',
         email: 'janecooper@example.com',
@@ -11,7 +11,7 @@ const people = [
             'https://images.sidearmdev.com/resize?url=https://s3.amazonaws.com/sidearm.sites/nicholls.sidearmsports.com/images/2019/11/1/0912_kacie_fountain_2019.jpg&width=300&height=&type=jpeg&gravity=&quality=',
     },
     {
-        name: 'Jane Cooper',
+        name: 'Jane Guard',
         title: 'Shooting Guard',
         role: 'Available',
         email: 'janecooper@example.com',
@@ -20,7 +20,7 @@ const people = [
             'https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/Weee8EDEy3quoDiaE7UcZWEJSgs=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/EPJXK72OJHVGAV2KAXEJF5HC7Y.jpg',
     },
     {
-        name: 'Jane Cooper',
+        name: 'Michael Jordan',
         title: 'Small Forward',
         role: 'Available',
         email: 'janecooper@example.com',
@@ -29,7 +29,7 @@ const people = [
             'https://banner2.cleanpng.com/20180616/cpx/kisspng-michael-jordan-basketball-player-nba-february-17-dennis-rodman-5b24951e5b5683.8798576715291241263741.jpg',
     },
     {
-        name: 'Jane Cooper',
+        name: 'Shaq',
         title: 'Point Guard',
         role: 'Available',
         email: 'janecooper@example.com',
@@ -38,7 +38,7 @@ const people = [
             'https://upload.wikimedia.org/wikipedia/commons/f/f6/Shaquille_O%27Neal_October_2017_%28cropped%29.jpg',
     },
     {
-        name: 'Jane Cooper',
+        name: 'Darth Vader',
         title: 'Center',
         role: 'Available',
         email: 'janecooper@example.com',
@@ -47,7 +47,7 @@ const people = [
             'https://www.jetpunk.com/img/user-photo-library/4d/4d5283e72f-450.jpg',
     },
     {
-        name: 'Jane Cooper',
+        name: 'Ben Kenobi',
         title: 'Shooting Guard',
         role: 'Available',
         email: 'janecooper@example.com',
