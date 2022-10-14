@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { post } from '../authService/authService';
 import { AuthContext } from '../context/auth.context';
@@ -36,6 +36,11 @@ const SignIn = () => {
         authenticateUser()
     })
   }
+
+  useEffect(() => {
+    localStorage.clear()
+   }, [])
+
   return (
     <div className="App">
       <>
